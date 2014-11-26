@@ -1,5 +1,12 @@
 function [I_interp, Tx, Ty] = registration_demons(I_rigid, I_mov,Tx,Ty,iteration, range, sigma)
 
+%  Function calculates registration on base of deoms algoritm from Thirion
+%  paper
+%  Version 0.1.0
+%
+%
+%
+
   I_interp = I_mov;    
         
 [Gx Gy] = gradient(I_rigid);
